@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color changer</title>
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 20px 100px;
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      .btn {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      #color-switcher {
+        text-align: right;
+      }
+
+      #white {
+        background-color: aliceblue;
+      }
+
+      #aqua {
+        background-color: aqua;
+      }
+
+      #violet {
+        background-color: blueviolet;
+      }
+
+      #black {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="text">About Us</h1>
+
+    <div id="color-switcher">
+      <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+
+    <center>
+      <img
+        src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg"
+      />
+    </center>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
+      consequuntur veniam fugit, deserunt reprehenderit optio officia animi
+      maiores vero quaerat provident voluptatum suscipit id, eos voluptate sit
+      aperiam voluptatem eum atque in fuga dolor. Delectus hic libero porro
+      architecto voluptas tenetur nihil, qui numquam, impedit aperiam, neque
+      autem corrupti aliquid incidunt suscipit dignissimos voluptatem pariatur
+      nam saepe? Reprehenderit culpa sapiente nostrum modi ea alias beatae
+      molestias harum saepe? Mollitia fugiat sint odit quibusdam enim numquam
+      nisi vel distinctio quae et ducimus soluta, hic deserunt temporibus
+      placeat quam minima, sit rerum eum quaerat. Ex aperiam obcaecati
+      doloremque excepturi aliquam nam quia suscipit quidem ea! Corporis beatae
+      error, numquam totam ea perferendis optio soluta, necessitatibus eius
+      fugit cupiditate libero? Eum corporis facilis, rem veniam est optio illo
+      dicta dolor corrupti non modi voluptate odit hic ratione minima sit
+      laboriosam impedit alias cum delectus assumenda quaerat possimus aut? Aut
+      temporibus nemo mollitia at. Quos fugit optio fugiat accusantium aperiam
+      deleniti itaque repudiandae, voluptate, reiciendis laudantium doloremque
+      repellendus accusamus odio dolor id, in ratione iure praesentium sint
+      nesciunt esse molestiae aut eligendi dignissimos? Excepturi nisi
+      recusandae non quibusdam laborum commodi sapiente quidem sunt. Enim fugit
+      explicabo recusandae omnis nobis velit ab! Aut, quos tenetur eius
+      explicabo quasi ipsum molestiae veniam quas illum praesentium. Id cumque,
+      atque quam aspernatur quibusdam sunt cupiditate nulla veritatis sed minima
+      reiciendis quis! Reprehenderit dolorum debitis error soluta fugiat!
+      Aliquam ullam aut blanditiis. Corporis cupiditate dolore incidunt animi
+      neque a eum eius? Quam voluptas, quis soluta sit corporis id aperiam
+      praesentium porro nobis nesciunt eos quisquam quia quibusdam veritatis
+      cum, quae enim, doloremque repudiandae maiores ratione similique!
+      Recusandae ducimus asperiores voluptate pariatur laborum nostrum dicta
+      reiciendis iure soluta, magni nisi eum accusantium ipsum, voluptatibus,
+      commodi unde ullam consectetur. Quam natus saepe aspernatur molestias
+      aliquid nemo illo eaque mollitia nobis quae est eligendi aliquam, amet
+      delectus ex dolore eveniet veniam corporis tempore id tenetur commodi
+      laboriosam ipsam consequatur. Praesentium nesciunt alias voluptates sed
+      labore optio, aspernatur hic nisi perspiciatis quasi sequi accusantium
+      voluptatibus debitis. Doloremque optio assumenda quisquam aspernatur,
+      recusandae sint incidunt iusto totam omnis harum rerum porro! Consequatur
+      atque officiis, et veritatis porro perspiciatis praesentium rem veniam
+      deleniti sed eos ullam eveniet modi, quia temporibus quaerat! Nobis sint
+      inventore nisi saepe explicabo ipsam minus dolor magni, odit, perferendis
+      eius quibusdam in, tenetur praesentium itaque quia corrupti excepturi?
+      Inventore, provident! Excepturi earum dolor magni quo maiores quod. Quod,
+      est temporibus illum expedita, adipisci doloremque at cupiditate,
+      voluptates aut cumque cum asperiores magni sint quibusdam fugit nobis
+      possimus. Blanditiis incidunt dolor earum. Nostrum ratione vero magni
+      magnam dolores porro placeat est vitae at pariatur. Veritatis animi,
+      officiis cumque eos error magni, ex, minima ad sint dolor quae voluptatem
+      provident facilis quo excepturi tempore incidunt fuga suscipit voluptas
+      aut. Eligendi quos laudantium minus quasi temporibus natus voluptates vel
+      architecto, iste sed ea in eveniet facere. Vero dicta, corporis aperiam
+      atque incidunt eligendi? Obcaecati aspernatur aut quos, consectetur sed
+      velit consequuntur temporibus omnis ad voluptatum hic, rem provident
+      possimus veniam incidunt nisi totam molestias?
+    </p>
+
+    <script>
+      function changeBG(color) {
+        document.body.style.backgroundColor = color;
+
+        let txt = document.getElementsByClassName("text");
+
+        if (color == "#000000") {
+          for (let elm of txt) {
+            elm.style.color = "white";
+          }
+        } else {
+          for (let elm of txt) {
+            elm.style.color = "black";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky navbar</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        #header{
+            text-align: center;
+        }
+
+        #logo{
+            width:150px;
+            height: 150px;
+        }
+
+        #menue-bar{
+            text-align: center;
+            background-color: violet;
+
+        }
+
+        #menue-bar li{
+            display: inline-block;
+            padding : 15px 10px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold; 
+        }
+
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #about-img{
+            width: 100%;
+            height:350px
+        }
+
+        .sticky{
+            position:fixed;
+            top: 0;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <img src="https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr" id="logo"> 
+    </div>
+
+    <nav id="menue-bar">
+
+        <li>Home</li>
+        <li>About us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contect Us</li>
+    </nav>
+
+    <div id="container">
+        <h1>About Us</h1>
+        <img src="https://img.freepik.com/premium-photo/about-us-multicolor-inscription-white-brick-wall-with-doodle-icons-around-about-us-concept-modern-style-illustration-with-doodle-design-icons-about-us-white-brickwall-background_226262-1853.jpg?w=2000" id="about-img">
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo sit eligendi consequuntur quis, sed ducimus fugit recusandae reprehenderit fuga vero id consequatur culpa ipsum. Ut aliquam a odio ea dolorem tempore officia excepturi expedita, officiis modi ex necessitatibus sint dolores nobis itaque. Tenetur quaerat fuga dolores porro! Assumenda ab consequuntur, perferendis sit quisquam officia fugit blanditiis necessitatibus dolor veritatis possimus odit, quo ipsa nesciunt tempore exercitationem facilis culpa expedita aliquam adipisci voluptate nulla! Repellendus voluptatum reprehenderit consectetur repellat cumque perspiciatis cum eos? Quisquam veniam rerum quia aut aliquid ad placeat inventore pariatur natus quae commodi architecto asperiores, harum consequatur voluptatem ea sunt optio vel similique. Obcaecati, nulla laborum? At debitis dolore eaque sunt in. Distinctio dolore dicta minus labore illum! Voluptate, eaque. Odio, laborum cum est minus aliquam placeat sapiente veritatis ducimus dolore nulla nesciunt asperiores, ad consectetur aspernatur tempora molestias quas et delectus porro quidem earum odit consequatur! Iure fugit beatae fuga voluptas id cumque dolorem corrupti repudiandae minima modi, eum amet, laborum architecto doloribus maiores nostrum error culpa eaque iusto ut praesentium provident. Incidunt culpa ex voluptate repellendus sint exercitationem, ducimus cum alias, ipsum officia, ea veniam quis amet accusamus autem fugit iusto inventore qui consectetur molestias. Et, laudantium veritatis pariatur minima, facilis libero maxime nam laboriosam distinctio vitae labore laborum ipsa animi voluptatibus deleniti quidem! Corporis recusandae non architecto in! Culpa accusamus eaque fugiat. Alias, fuga quod, totam, accusantium dolorem vero nemo deserunt minus molestiae nihil accusamus? Illum ad architecto iusto eius harum maxime molestias nostrum delectus. Modi quia non accusamus dolores voluptatibus corporis incidunt deserunt dolorem? Magni officiis ipsam autem, explicabo cum delectus quod enim, hic atque iste accusamus non necessitatibus deleniti! Laudantium ea reprehenderit harum sapiente ex animi, maiores atque ducimus nisi nulla incidunt explicabo doloribus provident quae ullam omnis fuga nemo impedit. Impedit quaerat sed quisquam recusandae! Impedit repudiandae quibusdam vel ullam optio fuga quae nostrum cum sit, tempore amet! Minus esse impedit nemo dignissimos atque possimus eius reprehenderit tempore quibusdam error et debitis expedita, quam minima soluta maiores maxime deserunt optio numquam, consectetur sed, quae deleniti ducimus? Illo assumenda obcaecati doloribus ut error explicabo atque magni. Illo voluptatem ullam cupiditate assumenda consectetur minus ipsam! Dolor fugiat aliquid quidem eum eos. Quas quia, dicta, perspiciatis provident officia ratione quibusdam sequi quis fugit laudantium fugiat impedit placeat porro minus a sint aliquam accusamus facere. Doloribus, qui fuga labore expedita reiciendis amet debitis non dolorum maiores nulla quidem, laboriosam libero perferendis ipsa aperiam sed nemo ipsam ut ipsum porro obcaecati optio, eaque quasi. Esse illo pariatur perferendis aperiam voluptatum dicta rem possimus. Sapiente rem obcaecati, unde perferendis debitis qui, reprehenderit aut saepe eligendi rerum veritatis adipisci deleniti et, cupiditate deserunt beatae quos. Fugiat aspernatur alias voluptatum magni. Odit fugit molestiae nobis. Rerum, odit? Eius dolore fugit ducimus assumenda, vero laborum sequi ut harum consequatur reiciendis id ex ratione esse odit dignissimos sint, amet repellendus cum recusandae dolores maxime blanditiis? Minus ipsam consectetur praesentium odio id ducimus qui. Dolorum officia illo et nemo in, doloremque voluptatem tenetur.
+        </p>
+
+    </div>
+
+    <script>
+        window.addEventListener('scroll' , function(){
+
+            let navbar = document.getElementById("menue-bar");
+
+            if(window.pageYOffset >=154)
+            {
+                navbar.classList.add('sticky');
+            }
+            else
+            {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
